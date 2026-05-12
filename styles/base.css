@@ -1,0 +1,148 @@
+﻿:root {
+  --bg: #f5f8fb;
+  --surface: #ffffff;
+  --primary: #0e4b87;
+  --secondary: #1d75b3;
+  --accent: #f4a261;
+  --text: #1f2937;
+  --muted: #4f5d78;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(180deg, #eef5fb 0%, #f9fbfd 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+body a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+body a:hover,
+body a:focus {
+  color: var(--secondary);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+#course-title {
+  display: block;
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(14, 75, 135, 0.08);
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--secondary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+main h1 {
+  font-size: clamp(2rem, 2.25vw, 2.8rem);
+  text-align: center;
+  margin: 0;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid rgba(15, 71, 130, 0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(34, 64, 106, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--primary);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+}
+
+.card-grid figure {
+  margin: 0;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin: 0.8rem 0 0;
+}
+
+.card ul li {
+  margin: 0.45rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 760px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
