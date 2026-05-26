@@ -42,9 +42,9 @@
                 </ul>
             </div>
             <picture>
-                <source media="(min-width: 900px)" srcset="images/congo-hero-large.webp">
-                <source media="(min-width: 600px)" srcset="images/congo-hero-medium.webp">
-                <img src="images/congo-hero-small.webp" alt="A scenic view of the Congo River and rainforest in Brazzaville.">
+                <source media="(min-width: 900px)" type="image/webp" srcset="images/congo-hero-large.webp">
+                <source media="(min-width: 600px)" type="image/webp" srcset="images/congo-hero-medium.webp">
+                <img src="images/congo-hero-small.webp" srcset="images/congo-hero-small.webp 600w" alt="A scenic view of the Congo River and rainforest in Brazzaville.">
             </picture>
         </section>
         <section class="details-grid">
@@ -73,7 +73,7 @@
             <article class="card weather-card">
                 <div class="card-header">
                     <h3>Weather</h3>
-                    <img class="weather-icon" src="images/weather-sun.svg" alt="Sun and cloud weather icon" aria-hidden="true">
+                    <img class="weather-icon" src="images/weather-sun.svg" alt="" aria-hidden="true">
                 </div>
                 <p class="weather-copy">Temperatures are shown in Celsius and the wind chill is calculated with static values.</p>
                 <ul class="weather-stats">
