@@ -1,12 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"name": "wdd131",
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": ".."
+        }
+    ]
 }
