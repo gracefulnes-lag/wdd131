@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Sun and cloud weather icon</title>
+  <circle cx="32" cy="22" r="10" fill="#f0b43d"/>
+  <path d="M18 36a10 10 0 0 1 10-10h18a10 10 0 0 1 0 20H28a8 8 0 0 1-10-10z" fill="#ffffff"/>
+  <path d="M31 8v6" stroke="#f0b43d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M31 42v6" stroke="#f0b43d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M8 24l5 5" stroke="#f0b43d" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 24l5 5" stroke="#f0b43d" stroke-width="4" stroke-linecap="round"/>
+</svg>
