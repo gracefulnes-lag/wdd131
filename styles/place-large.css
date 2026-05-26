@@ -1,0 +1,52 @@
+@media (min-width: 760px) {
+  .site-header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    padding: 0.9rem 1.2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero-copy h2 {
+    font-size: 2.5rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1.3fr 0.9fr;
+  }
+
+  .weather-card h3 {
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .weather-card h3::after {
+    content: '⛅';
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.55rem;
+    line-height: 1;
+    color: var(--accent);
+  }
+
+  .weather-icon {
+    display: none;
+  }
+}
