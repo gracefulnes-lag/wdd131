@@ -1,0 +1,4 @@
+{
+    "chat.agent.maxRequests": 500,
+    "editor.acceptSuggestionOnCommitCharacter": false
+}
