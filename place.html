@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congo Brazzaville | WDD 131</title>
+    <meta name="description" content="A country page for Congo Brazzaville with responsive hero images, local weather, and wind chill calculation.">
+    <meta name="author" content="Louyéyé Abosali Grace">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div>
+                <p class="eyebrow">WDD 131</p>
+                <h1>Congo Brazzaville</h1>
+            </div>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temples.html">Temple Album</a></li>
+                    <li><a href="place.html">Congo Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Discover</p>
+                <h2>The Republic of the Congo from Brazzaville to the rainforest</h2>
+                <p>Learn about a vibrant Central African nation filled with river culture, tropical forests, and welcoming communities.</p>
+                <ul class="hero-list">
+                    <li>Brazzaville's riverfront life</li>
+                    <li>French and Lingala culture</li>
+                    <li>Wildlife, markets, and music</li>
+                </ul>
+            </div>
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/congo-hero-large.webp">
+                <source media="(min-width: 600px)" srcset="images/congo-hero-medium.webp">
+                <img src="images/congo-hero-small.webp" alt="A scenic view of the Congo River and rainforest in Brazzaville.">
+            </picture>
+        </section>
+        <section class="details-grid">
+            <article class="card about-card">
+                <h3>About Congo-Brazzaville</h3>
+                <p>The Republic of the Congo is a river country in Central Africa known for its vibrant capital, Brazzaville, lush rainforests, and thriving music traditions.</p>
+                <dl>
+                    <div>
+                        <dt>Capital</dt>
+                        <dd>Brazzaville</dd>
+                    </div>
+                    <div>
+                        <dt>Language</dt>
+                        <dd>French, Lingala</dd>
+                    </div>
+                    <div>
+                        <dt>Region</dt>
+                        <dd>Central Africa</dd>
+                    </div>
+                    <div>
+                        <dt>Favorite destination</dt>
+                        <dd>Congo River promenade</dd>
+                    </div>
+                </dl>
+            </article>
+            <article class="card weather-card">
+                <div class="card-header">
+                    <h3>Weather</h3>
+                    <img class="weather-icon" src="images/weather-sun.svg" alt="Sun and cloud weather icon" aria-hidden="true">
+                </div>
+                <p class="weather-copy">Temperatures are shown in Celsius and the wind chill is calculated with static values. </p>
+                <ul class="weather-stats">
+                    <li>
+                        <span>Temperature</span>
+                        <strong id="temperature">28&nbsp;°C</strong>
+                    </li>
+                    <li>
+                        <span>Wind speed</span>
+                        <strong id="wind-speed">12&nbsp;km/h</strong>
+                    </li>
+                    <li>
+                        <span>Feels like</span>
+                        <strong id="wind-chill">N/A</strong>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Louyéyé Abosali Grace. Republic of the Congo. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

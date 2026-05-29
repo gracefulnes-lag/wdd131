@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album | WDD 131</title>
+    <meta name="description" content="Temple Album page for WDD 131 with a responsive gallery and hamburger navigation.">
+    <meta name="author" content="Louyéyé Abosali Grace">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script defer src="scripts/temples.js"></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div>
+                <p class="eyebrow">WDD 131</p>
+                <h1>Temple Album</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Primary site navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="place.html">Congo Page</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Responsive Temple Gallery</h2>
+            <p>This album demonstrates a mobile-first responsive layout with a hamburger navigation menu and a grid of temple images.</p>
+        </section>
+        <section class="gallery">
+            <div class="gallery-grid">
+                <figure>
+                    <img src="images/salt Lake Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Salt Lake Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Utah Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Utah Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/London Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>London Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/New Layton Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>New Layton Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/washington D.C Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Washington D.C Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Gilbert arizona Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Gilbert Arizona Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Colordo Springs Colorado Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Colorado Springs Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Provo utah Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Provo Utah Temple</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Paris France Temple.jpg" alt="Placeholder image of a temple">
+                    <figcaption>Paris France Temple</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Louyéyé Abosali Grace. Republic of the Congo. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
