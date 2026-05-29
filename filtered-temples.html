@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temples | WDD 131</title>
+    <meta name="description" content="Filtered temple album using dynamic JavaScript generation and native lazy loading.">
+    <meta name="author" content="Louyéyé Abosali Grace">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div>
+                <p class="eyebrow">WDD 131</p>
+                <h1>Filtered Temple Album</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">☰</button>
+        </div>
+        <nav id="site-nav" class="site-nav" aria-label="Primary site navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="place.html">Congo Page</a></li>
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Filtered Temple Gallery</h2>
+            <p>Use the navigation links to filter temples by era and size. Images are lazy-loaded for better performance.</p>
+        </section>
+
+        <section class="gallery">
+            <div id="temple-grid" class="gallery-grid" aria-live="polite">
+                <!-- Temple cards will be injected here -->
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>© <span id="current-year"></span> Louyéyé Abosali Grace. Republic of the Congo. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

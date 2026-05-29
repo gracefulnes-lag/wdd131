@@ -1,0 +1,41 @@
+@media (min-width: 760px) {
+  .site-header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: block !important;
+    margin-top: 1rem;
+  }
+
+  .site-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    padding: 0.95rem 1.25rem;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .hero {
+    padding: 2rem;
+  }
+}
